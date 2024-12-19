@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Business } from './business.model';
-import { BusinessService } from './business.service';
+import { Business } from '../business.model';
+import { BusinessService } from '../business.service';
 
 
 @Component({
