@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Lista de Lanches</h2>
+    <h2>Lista de Lanchonetes Cadastradas</h2>
     <table class="table">
         <thead>
             <tr>
@@ -12,9 +12,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let business of businesses; let i = index">
+            <tr *ngFor="let business of businesses">
                 <td data-label="ID">{{ business.id }}</td>
-                <td data-label="Nome">{{ business.name }}</td>
+                <td data-label="Nome">
+                    <a [routerLink]="'/business/1/' + business.id">{{ business.name }}</a>
+                </td>
                 <td data-label="Endereço">{{ business.address }}</td>
                 <td data-label="Telefone">{{ business.phone }}</td>
                 <td data-label="Taxa de Entrega">{{ business.deliveryFee }}</td>

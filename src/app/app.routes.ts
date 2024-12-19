@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { BusinessComponent } from './components/business/business.component';
-import { ListBusinessComponent } from './components/list-business/list-business.component';
+import { BusinessComponent } from './components/business-component/business/business.component';
+import { ListBusinessComponent } from './components/business-component/list-business/list-business.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'businesses', pathMatch: 'full' },

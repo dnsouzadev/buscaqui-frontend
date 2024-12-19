@@ -1,12 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Business } from '../business.model';
 import { BusinessService } from '../business.service';
 
 
+
 @Component({
   selector: 'app-business',
-  imports: [CommonModule],
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './business.component.html',
   styleUrl: './business.component.css'
 })
