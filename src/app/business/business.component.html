@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Lista de Negócios</h2>
+    <h2>Lista de Lanches</h2>
     <table class="table">
         <thead>
             <tr>
@@ -13,12 +13,12 @@
         </thead>
         <tbody>
             <tr *ngFor="let business of businesses; let i = index">
-                <td>{{ business.id }}</td>
-                <td>{{ business.name }}</td>
-                <td>{{ business.address }}</td>
-                <td>{{ business.phone }}</td>
-                <td>{{ business.deliveryFee }}</td>
-                <td>{{ business.category }}</td>
+                <td data-label="ID">{{ business.id }}</td>
+                <td data-label="Nome">{{ business.name }}</td>
+                <td data-label="Endereço">{{ business.address }}</td>
+                <td data-label="Telefone">{{ business.phone }}</td>
+                <td data-label="Taxa de Entrega">{{ business.deliveryFee }}</td>
+                <td data-label="Categoria">{{ business.category }}</td>
             </tr>
         </tbody>
     </table>
